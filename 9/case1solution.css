@@ -1,0 +1,216 @@
+@charset "utf-8";
+/*
+Base Style Sheet for the Slate & Pencil Website
+Filename: sp_base.css
+*/
+article, aside, figcaption, figure,
+footer, header, main, nav, section {
+display: block;
+}
+address, article, aside, blockquote, body, cite,
+div, dl, dt, dd, em, figcaption, figure, footer,
+h1, h2, h3, h4, h5, h6, header, html, img,
+li, main, nav, ol, p, section, span, ul {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+}
+nav ul {
+list-style: none;
+list-style-image: none;
+}
+nav a {
+text-decoration: none;
+}
+body {
+line-height: 1;
+}
+
+@charset "utf-8";
+
+Typographical styles for Slate and Pencil Tutoring
+Filename: sp_styles.css
+
+*/
+/* Window and Body Styles */
+html {
+background-color: rgb(230, 182, 144);
+}
+body {
+background-color: rgb(250, 238, 218);
+font-family: Verdana, Geneva, Arial, sans-serif;
+}
+
+/* Page Header Styles */
+body > header {
+background-color: rgb(61, 138, 216);
+}
+
+body > header > nav a {
+font-size: 1em;
+margin: 0.4em 0;
+padding: 5px;
+}
+body > header > nav a:link, body > header > nav:visited {
+color: rgb(250, 238, 218);
+}
+body > header > nav a:hover, body > header > nav:active {
+background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Horizontal Navigation List Styles */
+nav.horizontal ul li {
+background-color: rgb(18, 31, 102);
+font-size: 0.9em;
+padding: 10px 0;
+text-align: center;
+}
+nav.horizontal a:link, nav.horizontal a:visited {
+color: rgb(250, 238, 218);
+}
+
+nav.horizontal a:hover, nav.horizontal a:active {
+color: rgb(255, 255, 64);
+}
+
+/* Topics Styles */
+ul#topics {
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+ul#topics li p {
+color: rgb(95, 114, 232);
+font-size: 0.8em;
+}
+
+/* Customer Comment Styles */
+
+ul#comments li p {
+font-size: 0.9em;
+color: rgb(121, 121, 121);
+line-height: 1.2em;
+}
+/* Footer Styles */
+footer {
+color: rgb(186, 186, 156);
+background-color: rgb(44, 91, 169);
+font-size: 0.9em;
+padding: 10px 0px;
+text-align: center;
+}
+@charset "utf-8";
+/*
+Layout styles for Slate and Pencil Tutoring
+Author: Karen Cooke
+Date: 2017-03-01
+Filename: sp_layout.css
+
+*/
+/* Window and Body Styles */
+html {
+height: 100%;
+}
+body {
+min-height: 100%;
+margin-left: auto;
+margin-right: auto;
+max-width: 960px;
+min-width: 640px;
+width: 95%;
+}
+header, ul, nav, li, a {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+/* Row Styles */
+.row::after {
+clear: both;
+content: "";
+display: table;
+}
+
+/* Page Header Styles */
+body > header > img {
+display: block;
+float: left;
+width: 70%;
+}
+body > header > nav {
+float: left;
+padding-left: 2%;
+padding-right: 2%;
+width: 30%;
+
+}
+body > header > nav a {
+display: block;
+width: 100%;
+}
+
+/* Horizontal Navigation List Styles */
+nav.horizontal li {
+display: block;
+float: left;
+width: 12.5%;
+}
+
+/* Topics Styles */
+
+ul#topics li {
+display: block;
+float: left;
+width: 20%;
+margin-left: 0%;
+margin-right: 1.5%;
+}
+
+ul#topics li:first-of-type {
+margin-left: 7.75%;
+}
+ul#topics li:last-of-type {
+margin-right: 7.75%;
+}
+ul#topics li img {
+display: block;
+width: 50%;
+margin: 0 auto;
+}
+
+/* HR Styles */
+hr {
+width: 50%;
+
+}
+
+/* Customer Comment Styles */
+ul#comments {
+width: 75%;
+margin: 40px auto;
+}
+
+ul#comments li {
+display: block;
+float: left;
+margin-bottom: 30px;
+width: 50%;
+}
+ul#comments li img {
+display: block;
+float: left;
+width: 20%;
+margin: 0 5%;
+}
+ul#comments li p {
+float: left;
+width: 70%;
+}
+/* Footer Styles */
+footer {
+clear: both;
+}
